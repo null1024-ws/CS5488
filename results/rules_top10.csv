@@ -1,0 +1,11 @@
+antecedent,consequent,support,confidence,lift
+"dist=very_long, tip=high, wx=dry","pay=card, pu=Queens",0.016392,0.6714730460429297,13.169236801657835
+"dist=very_long, tip=high","pay=card, pu=Queens",0.025928,0.67059797227395,13.152074454262769
+"day=weekday, dist=very_long, tip=high, wx=dry","pay=card, pu=Queens",0.011832,0.6678708512079476,13.098588907349722
+"day=weekday, dist=very_long, tip=high","pay=card, pu=Queens",0.018668,0.664909531272261,13.04051014498041
+"pu=Queens, tip=high","dist=very_long, pay=card",0.025928,0.6378665617004527,12.645043249949502
+"pu=Queens, tip=high, wx=dry","dist=very_long, pay=card",0.016392,0.6332869726471951,12.554257645055806
+"day=weekday, pu=Queens, tip=high","dist=very_long, pay=card",0.018668,0.6274536165635923,12.438617408682743
+"day=weekday, pu=Queens, tip=high, wx=dry","dist=very_long, pay=card",0.011832,0.6236559139784946,12.363331892365684
+"pay=card, pu=Queens, wx=rain",dist=very_long,0.01114,0.6573046967193769,10.018666880858689
+"pay=card, pu=Queens",dist=very_long,0.033356,0.6541931434847414,9.97124045062708

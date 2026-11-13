@@ -1,0 +1,788 @@
+{
+  "rows_raw": 218118168,
+  "rows_clean": 201939841,
+  "drop_rate": 0.07417230370282589,
+  "rules": {
+    "n_transactions": 250000,
+    "n_itemsets": 2114,
+    "n_rules": 2368,
+    "min_support": 0.01,
+    "min_confidence": 0.6,
+    "min_lift": 1.2,
+    "top": [
+      {
+        "antecedent": "dist=very_long, tip=high, wx=dry",
+        "consequent": "pay=card, pu=Queens",
+        "support": 0.016392,
+        "confidence": 0.6714730460429297,
+        "lift": 13.169236801657835
+      },
+      {
+        "antecedent": "dist=very_long, tip=high",
+        "consequent": "pay=card, pu=Queens",
+        "support": 0.025928,
+        "confidence": 0.67059797227395,
+        "lift": 13.152074454262769
+      },
+      {
+        "antecedent": "day=weekday, dist=very_long, tip=high, wx=dry",
+        "consequent": "pay=card, pu=Queens",
+        "support": 0.011832,
+        "confidence": 0.6678708512079476,
+        "lift": 13.098588907349722
+      },
+      {
+        "antecedent": "day=weekday, dist=very_long, tip=high",
+        "consequent": "pay=card, pu=Queens",
+        "support": 0.018668,
+        "confidence": 0.664909531272261,
+        "lift": 13.04051014498041
+      },
+      {
+        "antecedent": "pu=Queens, tip=high",
+        "consequent": "dist=very_long, pay=card",
+        "support": 0.025928,
+        "confidence": 0.6378665617004527,
+        "lift": 12.645043249949502
+      },
+      {
+        "antecedent": "pu=Queens, tip=high, wx=dry",
+        "consequent": "dist=very_long, pay=card",
+        "support": 0.016392,
+        "confidence": 0.6332869726471951,
+        "lift": 12.554257645055806
+      },
+      {
+        "antecedent": "day=weekday, pu=Queens, tip=high",
+        "consequent": "dist=very_long, pay=card",
+        "support": 0.018668,
+        "confidence": 0.6274536165635923,
+        "lift": 12.438617408682743
+      },
+      {
+        "antecedent": "day=weekday, pu=Queens, tip=high, wx=dry",
+        "consequent": "dist=very_long, pay=card",
+        "support": 0.011832,
+        "confidence": 0.6236559139784946,
+        "lift": 12.363331892365684
+      },
+      {
+        "antecedent": "pay=card, pu=Queens, wx=rain",
+        "consequent": "dist=very_long",
+        "support": 0.01114,
+        "confidence": 0.6573046967193769,
+        "lift": 10.018666880858689
+      },
+      {
+        "antecedent": "pay=card, pu=Queens",
+        "consequent": "dist=very_long",
+        "support": 0.033356,
+        "confidence": 0.6541931434847414,
+        "lift": 9.97124045062708
+      }
+    ],
+    "stability_overlap_top15": 15,
+    "stability_2022": 15,
+    "stability_2023": 15
+  },
+  "borough_counts": {
+    "EWR": 1600,
+    "Queens": 14963589,
+    "Bronx": 192359,
+    "Manhattan": 185311831,
+    "Staten Island": 7485,
+    "Brooklyn": 1434059,
+    "nan": 28918
+  },
+  "manhattan_share": 0.917658596155872,
+  "peak_hour": 18,
+  "peak_dow": "Thu",
+  "peak_trips": 2205989,
+  "april": {
+    "2019": 7127650,
+    "2020": 201610,
+    "2022": 3289194,
+    "2023": 3015167
+  },
+  "percentiles": {
+    "distance": {
+      "p50": 1.7288304434098432,
+      "p99": 19.566629116079014
+    },
+    "duration_min": {
+      "p50": 11.50075620517746,
+      "p99": 60.12910019547691
+    },
+    "fare": {
+      "p50": 10.305591115078398,
+      "p99": 70.07604907962758
+    },
+    "tip_ratio": {
+      "p50": 0.2354694266419614,
+      "p99": 0.5067102637630827
+    }
+  },
+  "april_2020_vs_2019": -0.9717143799148387,
+  "april_2022_vs_2019": -0.5385303711602001,
+  "april_2023_vs_2019": -0.5769760019080623,
+  "clusters": {
+    "k": 2,
+    "silhouette": 0.2662013111499467,
+    "silhouette_by_k": {
+      "2": 0.2662013111499467,
+      "3": 0.1577126002055277,
+      "4": 0.17275323805994508,
+      "5": 0.17669416545772876,
+      "6": 0.18152576656299726,
+      "7": 0.1698197654701343,
+      "8": 0.15951261284836776
+    },
+    "n_fit": 200000,
+    "silhouette_n": 8000
+  },
+  "cluster_profiles": [
+    {
+      "cluster": 0,
+      "n": 148332,
+      "share": 0.74166,
+      "mean_distance": 1.4756469945797266,
+      "mean_duration_min": 9.700695037841797,
+      "mean_fare": 8.844448938866867,
+      "mean_tip_ratio": 0.21195876598358154,
+      "mean_hour": 14.060115147102445,
+      "weekend_share": 0.24637974273926058,
+      "top_borough": "Manhattan",
+      "top_borough_share": 0.9883639403500256
+    },
+    {
+      "cluster": 1,
+      "n": 51668,
+      "share": 0.25834,
+      "mean_distance": 7.917906441124099,
+      "mean_duration_min": 27.673269271850586,
+      "mean_fare": 29.691773631648218,
+      "mean_tip_ratio": 0.15666131675243378,
+      "mean_hour": 14.035863590617016,
+      "weekend_share": 0.2799992258264303,
+      "top_borough": "Manhattan",
+      "top_borough_share": 0.7302392196330417
+    }
+  ],
+  "timing": {
+    "medians": [
+      {
+        "workload": "GIL",
+        "mode": "process",
+        "p": 1,
+        "chunksize": NaN,
+        "block": NaN,
+        "n_input": 400000,
+        "note": "pure Python row loop",
+        "median": 0.291566,
+        "q1": 0.273471,
+        "q3": 0.296994,
+        "repeats": 5
+      },
+      {
+        "workload": "GIL",
+        "mode": "process",
+        "p": 4,
+        "chunksize": NaN,
+        "block": NaN,
+        "n_input": 400000,
+        "note": "pure Python row loop",
+        "median": 0.201058,
+        "q1": 0.198613,
+        "q3": 0.214728,
+        "repeats": 5
+      },
+      {
+        "workload": "GIL",
+        "mode": "thread",
+        "p": 1,
+        "chunksize": NaN,
+        "block": NaN,
+        "n_input": 400000,
+        "note": "pure Python row loop",
+        "median": 0.017925,
+        "q1": 0.017699,
+        "q3": 0.017933,
+        "repeats": 5
+      },
+      {
+        "workload": "GIL",
+        "mode": "thread",
+        "p": 4,
+        "chunksize": NaN,
+        "block": NaN,
+        "n_input": 400000,
+        "note": "pure Python row loop",
+        "median": 0.019531,
+        "q1": 0.019366,
+        "q3": 0.020092,
+        "repeats": 5
+      },
+      {
+        "workload": "T1",
+        "mode": "process",
+        "p": 1,
+        "chunksize": 1.0,
+        "block": NaN,
+        "n_input": 1,
+        "note": "2023-01 only",
+        "median": 4.578907,
+        "q1": 4.565374,
+        "q3": 4.639328,
+        "repeats": 3
+      },
+      {
+        "workload": "T1",
+        "mode": "process",
+        "p": 1,
+        "chunksize": 1.0,
+        "block": NaN,
+        "n_input": 12,
+        "note": "2023 x12",
+        "median": 52.13481,
+        "q1": 51.517542,
+        "q3": 52.294608,
+        "repeats": 5
+      },
+      {
+        "workload": "T1",
+        "mode": "process",
+        "p": 2,
+        "chunksize": 1.0,
+        "block": NaN,
+        "n_input": 12,
+        "note": "2023 x12",
+        "median": 26.716786,
+        "q1": 26.078391,
+        "q3": 27.205783,
+        "repeats": 5
+      },
+      {
+        "workload": "T1",
+        "mode": "process",
+        "p": 4,
+        "chunksize": 1.0,
+        "block": NaN,
+        "n_input": 1,
+        "note": "2023-01 only",
+        "median": 4.19455,
+        "q1": 4.190652999999999,
+        "q3": 4.3079435,
+        "repeats": 3
+      },
+      {
+        "workload": "T1",
+        "mode": "process",
+        "p": 4,
+        "chunksize": 1.0,
+        "block": NaN,
+        "n_input": 12,
+        "note": "2023 x12",
+        "median": 13.658476,
+        "q1": 13.616239,
+        "q3": 14.271048,
+        "repeats": 5
+      },
+      {
+        "workload": "T1",
+        "mode": "process",
+        "p": 4,
+        "chunksize": 4.0,
+        "block": NaN,
+        "n_input": 12,
+        "note": "2023 x12 chunk=4",
+        "median": 17.038153,
+        "q1": 17.029618499999998,
+        "q3": 17.0865,
+        "repeats": 3
+      },
+      {
+        "workload": "T1",
+        "mode": "process",
+        "p": 4,
+        "chunksize": 12.0,
+        "block": NaN,
+        "n_input": 12,
+        "note": "2023 x12 chunk=12",
+        "median": 49.668082,
+        "q1": 48.349159,
+        "q3": 49.889207999999996,
+        "repeats": 3
+      },
+      {
+        "workload": "T1",
+        "mode": "process",
+        "p": 8,
+        "chunksize": 1.0,
+        "block": NaN,
+        "n_input": 12,
+        "note": "2023 x12",
+        "median": 14.266322,
+        "q1": 14.21016,
+        "q3": 14.387852,
+        "repeats": 5
+      },
+      {
+        "workload": "T1",
+        "mode": "thread",
+        "p": 4,
+        "chunksize": 1.0,
+        "block": NaN,
+        "n_input": 12,
+        "note": "2023 x12 thread",
+        "median": 27.422552,
+        "q1": 26.965618,
+        "q3": 27.542277,
+        "repeats": 5
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 1,
+        "chunksize": NaN,
+        "block": 8192.0,
+        "n_input": 650000,
+        "note": "weak",
+        "median": 1.406801,
+        "q1": 1.4064945,
+        "q3": 1.4170715,
+        "repeats": 3
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 1,
+        "chunksize": NaN,
+        "block": 8192.0,
+        "n_input": 2600000,
+        "note": "parallel_update",
+        "median": 6.428065,
+        "q1": 6.292163,
+        "q3": 6.432912,
+        "repeats": 5
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 2,
+        "chunksize": NaN,
+        "block": 8192.0,
+        "n_input": 1300000,
+        "note": "weak",
+        "median": 1.575199,
+        "q1": 1.574741,
+        "q3": 1.626034,
+        "repeats": 3
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 2,
+        "chunksize": NaN,
+        "block": 8192.0,
+        "n_input": 2600000,
+        "note": "parallel_update",
+        "median": 3.207928,
+        "q1": 3.173067,
+        "q3": 3.21459,
+        "repeats": 5
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 4,
+        "chunksize": NaN,
+        "block": 64.0,
+        "n_input": 2600000,
+        "note": "parallel_update",
+        "median": 1.594485,
+        "q1": 1.5919165,
+        "q3": 1.6399504999999999,
+        "repeats": 3
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 4,
+        "chunksize": NaN,
+        "block": 256.0,
+        "n_input": 2600000,
+        "note": "parallel_update",
+        "median": 1.866819,
+        "q1": 1.858971,
+        "q3": 1.8834035,
+        "repeats": 3
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 4,
+        "chunksize": NaN,
+        "block": 1024.0,
+        "n_input": 2600000,
+        "note": "parallel_update",
+        "median": 1.619836,
+        "q1": 1.6180735,
+        "q3": 1.6300585,
+        "repeats": 3
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 4,
+        "chunksize": NaN,
+        "block": 4096.0,
+        "n_input": 2600000,
+        "note": "parallel_update",
+        "median": 1.653814,
+        "q1": 1.6442584999999998,
+        "q3": 1.702956,
+        "repeats": 3
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 4,
+        "chunksize": NaN,
+        "block": 8192.0,
+        "n_input": 2600000,
+        "note": "parallel_update",
+        "median": 1.611079,
+        "q1": 1.608072,
+        "q3": 1.611586,
+        "repeats": 5
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 4,
+        "chunksize": NaN,
+        "block": 8192.0,
+        "n_input": 2600000,
+        "note": "weak",
+        "median": 1.623759,
+        "q1": 1.6232734999999998,
+        "q3": 1.680922,
+        "repeats": 3
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 4,
+        "chunksize": NaN,
+        "block": 16384.0,
+        "n_input": 2600000,
+        "note": "parallel_update",
+        "median": 1.660967,
+        "q1": 1.6518055,
+        "q3": 1.664113,
+        "repeats": 3
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 4,
+        "chunksize": NaN,
+        "block": 65536.0,
+        "n_input": 2600000,
+        "note": "parallel_update",
+        "median": 1.653887,
+        "q1": 1.6292365000000002,
+        "q3": 1.6641385,
+        "repeats": 3
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 4,
+        "chunksize": NaN,
+        "block": 262144.0,
+        "n_input": 2600000,
+        "note": "parallel_update",
+        "median": 1.912034,
+        "q1": 1.901313,
+        "q3": 1.9400045000000001,
+        "repeats": 3
+      },
+      {
+        "workload": "T2",
+        "mode": "numba",
+        "p": 8,
+        "chunksize": NaN,
+        "block": 8192.0,
+        "n_input": 2600000,
+        "note": "parallel_update",
+        "median": 1.658551,
+        "q1": 1.657775,
+        "q3": 1.789193,
+        "repeats": 5
+      },
+      {
+        "workload": "T3",
+        "mode": "fpgrowth",
+        "p": 1,
+        "chunksize": NaN,
+        "block": NaN,
+        "n_input": 1200000,
+        "note": "min_support=0.02",
+        "median": 1.496642,
+        "q1": 1.485512,
+        "q3": 1.507229,
+        "repeats": 5
+      },
+      {
+        "workload": "T3",
+        "mode": "fpgrowth",
+        "p": 2,
+        "chunksize": NaN,
+        "block": NaN,
+        "n_input": 1200000,
+        "note": "min_support=0.02",
+        "median": 1.665826,
+        "q1": 1.665589,
+        "q3": 1.688822,
+        "repeats": 5
+      },
+      {
+        "workload": "T3",
+        "mode": "fpgrowth",
+        "p": 4,
+        "chunksize": NaN,
+        "block": NaN,
+        "n_input": 1200000,
+        "note": "min_support=0.02",
+        "median": 1.680822,
+        "q1": 1.669618,
+        "q3": 1.689319,
+        "repeats": 5
+      },
+      {
+        "workload": "T3",
+        "mode": "fpgrowth",
+        "p": 8,
+        "chunksize": NaN,
+        "block": NaN,
+        "n_input": 1200000,
+        "note": "min_support=0.02",
+        "median": 1.750246,
+        "q1": 1.749372,
+        "q3": 1.785045,
+        "repeats": 5
+      }
+    ],
+    "T1": {
+      "t1": 52.13481,
+      "points": [
+        {
+          "p": 1,
+          "median_s": 52.13481,
+          "q1": 51.517542,
+          "q3": 52.294608,
+          "speedup": 1.0,
+          "efficiency": 1.0,
+          "karp_flatt": null,
+          "n_input": 12,
+          "note": "2023 x12"
+        },
+        {
+          "p": 2,
+          "median_s": 26.716786,
+          "q1": 26.078391,
+          "q3": 27.205783,
+          "speedup": 1.951387790432577,
+          "efficiency": 0.9756938952162885,
+          "karp_flatt": 0.024911608961459608,
+          "n_input": 12,
+          "note": "2023 x12"
+        },
+        {
+          "p": 4,
+          "median_s": 13.658476,
+          "q1": 13.616239,
+          "q3": 14.271048,
+          "speedup": 3.8170298062536405,
+          "efficiency": 0.9542574515634101,
+          "karp_flatt": 0.0159784093072044,
+          "n_input": 12,
+          "note": "2023 x12"
+        },
+        {
+          "p": 8,
+          "median_s": 14.266322,
+          "q1": 14.21016,
+          "q3": 14.387852,
+          "speedup": 3.6543973982922857,
+          "efficiency": 0.4567996747865357,
+          "karp_flatt": 0.16987763070393852,
+          "n_input": 12,
+          "note": "2023 x12"
+        }
+      ]
+    },
+    "T2": {
+      "t1": 6.428065,
+      "points": [
+        {
+          "p": 1,
+          "median_s": 6.428065,
+          "q1": 6.292163,
+          "q3": 6.432912,
+          "speedup": 1.0,
+          "efficiency": 1.0,
+          "karp_flatt": null,
+          "n_input": 2600000,
+          "note": "parallel_update"
+        },
+        {
+          "p": 2,
+          "median_s": 3.207928,
+          "q1": 3.173067,
+          "q3": 3.21459,
+          "speedup": 2.0038058834238175,
+          "efficiency": 1.0019029417119087,
+          "karp_flatt": -0.001899327402569817,
+          "n_input": 2600000,
+          "note": "parallel_update"
+        },
+        {
+          "p": 4,
+          "median_s": 1.611079,
+          "q1": 1.608072,
+          "q3": 1.611586,
+          "speedup": 3.9899129713688777,
+          "efficiency": 0.9974782428422194,
+          "karp_flatt": 0.0008427108313310653,
+          "n_input": 2600000,
+          "note": "parallel_update"
+        },
+        {
+          "p": 8,
+          "median_s": 1.658551,
+          "q1": 1.657775,
+          "q3": 1.789193,
+          "speedup": 3.8757113890377806,
+          "efficiency": 0.48446392362972257,
+          "karp_flatt": 0.1520195979883304,
+          "n_input": 2600000,
+          "note": "parallel_update"
+        }
+      ]
+    },
+    "T3": {
+      "t1": 1.496642,
+      "points": [
+        {
+          "p": 1,
+          "median_s": 1.496642,
+          "q1": 1.485512,
+          "q3": 1.507229,
+          "speedup": 1.0,
+          "efficiency": 1.0,
+          "karp_flatt": null,
+          "n_input": 1200000,
+          "note": "min_support=0.02"
+        },
+        {
+          "p": 2,
+          "median_s": 1.665826,
+          "q1": 1.665589,
+          "q3": 1.688822,
+          "speedup": 0.8984383723149957,
+          "efficiency": 0.44921918615749784,
+          "karp_flatt": 1.2260847951614346,
+          "n_input": 1200000,
+          "note": "min_support=0.02"
+        },
+        {
+          "p": 4,
+          "median_s": 1.680822,
+          "q1": 1.669618,
+          "q3": 1.689319,
+          "speedup": 0.8904226622450205,
+          "efficiency": 0.22260566556125513,
+          "karp_flatt": 1.1640828824350333,
+          "n_input": 1200000,
+          "note": "min_support=0.02"
+        },
+        {
+          "p": 8,
+          "median_s": 1.750246,
+          "q1": 1.749372,
+          "q3": 1.785045,
+          "speedup": 0.8551037968377017,
+          "efficiency": 0.10688797460471271,
+          "karp_flatt": 1.19365562563201,
+          "n_input": 1200000,
+          "note": "min_support=0.02"
+        }
+      ]
+    },
+    "GIL_thread": {
+      "t1": 0.017925,
+      "points": [
+        {
+          "p": 1,
+          "median_s": 0.017925,
+          "q1": 0.017699,
+          "q3": 0.017933,
+          "speedup": 1.0,
+          "efficiency": 1.0,
+          "karp_flatt": null,
+          "n_input": 400000,
+          "note": "pure Python row loop"
+        },
+        {
+          "p": 4,
+          "median_s": 0.019531,
+          "q1": 0.019366,
+          "q3": 0.020092,
+          "speedup": 0.9177717474783678,
+          "efficiency": 0.22944293686959194,
+          "karp_flatt": 1.1194607159460714,
+          "n_input": 400000,
+          "note": "pure Python row loop"
+        }
+      ]
+    },
+    "GIL_process": {
+      "t1": 0.291566,
+      "points": [
+        {
+          "p": 1,
+          "median_s": 0.291566,
+          "q1": 0.273471,
+          "q3": 0.296994,
+          "speedup": 1.0,
+          "efficiency": 1.0,
+          "karp_flatt": null,
+          "n_input": 400000,
+          "note": "pure Python row loop"
+        },
+        {
+          "p": 4,
+          "median_s": 0.201058,
+          "q1": 0.198613,
+          "q3": 0.214728,
+          "speedup": 1.4501586606849766,
+          "efficiency": 0.36253966517124414,
+          "karp_flatt": 0.5861062903996578,
+          "n_input": 400000,
+          "note": "pure Python row loop"
+        }
+      ]
+    }
+  },
+  "machine": {
+    "python": "3.12.3",
+    "platform": "Linux-6.12.113+-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "logical_cpus": 4,
+    "physical_cpus": 4,
+    "memory_bytes": 16780623872,
+    "cpu_freq_mhz": 2400.0
+  }
+}

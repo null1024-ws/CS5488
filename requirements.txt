@@ -1,0 +1,9 @@
+numpy
+pandas
+pyarrow
+numba
+scikit-learn
+mlxtend
+matplotlib
+psutil
+pyshp

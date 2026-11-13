@@ -1,0 +1,70 @@
+{
+  "files": 12,
+  "borough_n": {
+    "EWR": 394,
+    "Queens": 3415423,
+    "Bronx": 10401,
+    "Manhattan": 31341107,
+    "Staten Island": 217,
+    "Brooklyn": 122590,
+    "nan": 3794
+  },
+  "borough_total_dated": 34893926,
+  "dated_pickups": 34893926,
+  "weekday_share": 0.7289111291174286,
+  "peak_hour": 18,
+  "peak_dow": "Thu",
+  "peak_n": 405828,
+  "distance": {
+    "p50": 1.7999999523162842,
+    "p99": 20.290000915527344
+  },
+  "duration_min": {
+    "p50": 12.616666793823242,
+    "p99": 65.5999984741211
+  },
+  "fare": {
+    "p50": 13.5,
+    "p99": 74.4000015258789
+  },
+  "n_clean_files": 34893980,
+  "sample_rows_drawn": 299970,
+  "n_fit": 200000,
+  "silhouette_n": 8000,
+  "feature_set": "geo_time_distance",
+  "features": [
+    "zone_centroid_easting_ft",
+    "zone_centroid_northing_ft",
+    "sin_hour",
+    "cos_hour",
+    "weekend",
+    "log_distance"
+  ],
+  "k": 4,
+  "silhouette_by_k": {
+    "2": 0.5504045338918591,
+    "3": 0.26630593762036503,
+    "4": 0.3116619046340872,
+    "5": 0.3215680834729608,
+    "6": 0.30823176756540804,
+    "7": 0.26324353899000075,
+    "8": 0.3082545801459081
+  },
+  "reported_silhouette": 0.3116619046340872,
+  "selection": {
+    "rule": "Report k=4 or k=5, not the silhouette maximum, when the profiles separate on hour or borough. Prefer the higher silhouette if the gap exceeds 0.01; otherwise k=4.",
+    "k4": {
+      "hour_range": 7.181109601289524,
+      "manhattan_range": 0.9538271022526241,
+      "queens_range": 0.9570227745372235,
+      "distance_range": 13.41402974088791
+    },
+    "k5": {
+      "hour_range": 7.263411165807582,
+      "manhattan_range": 0.9524627105912652,
+      "queens_range": 0.9581213499002407,
+      "distance_range": 13.536526878883938
+    }
+  },
+  "crs": "NAD83 State Plane New York Long Island, US survey feet"
+}

@@ -1,0 +1,9 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-6.12.113+-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "logical_cpus": 4,
+  "physical_cpus": 4,
+  "memory_bytes": 16780623872,
+  "cpu_freq_mhz": 2400.0
+}
